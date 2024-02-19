@@ -1,19 +1,44 @@
 # exiftool_GP
-Simple scripts for merging json metadata to pictures and videos after export from Google Photos
 
-### Description:
+Simple scripts for merging JSON metadata to pictures and videos after export from Google Photos.
 
-`exif_merge_json_to_file.sh` - merging json to files
+## Description
 
-#### NB: additional scripts, do it for your own risks!
-`moving_jpg.sh` and `moving_mp4.sh` - renames json files which were break after exporting
+This repository provides convenient shell scripts for merging JSON metadata to files exported from Google Photos.
 
-### Installation:
+### Features
 
-Put the shell scripts into the extracted photos folder and open terminal there.
+- `exif_merge_json_to_file.sh`: A script for merging JSON metadata to files.
 
-```bash
-chmod +x *.sh
-./exif_merge_json_to_file.sh
-```
+### Dependencies
+
+You will need to be sure that `exiftool` is already installed on your OS.
+
+## How to
+
+1. **Navigate to the Folder**: Enter the extracted photos folder.
+
+    ```bash
+    cd <folder with extracted Google photos>
+    ```
+
+2. **Clone the Repository**: Clone this repository.
+   
+   ```bash
+   git clone https://github.com/feel2code/exiftool_GP.git
+   ```
+
+3. **Set Permissions**: Make the shell scripts executable.
+
+    ```bash
+    chmod +x *.sh
+    ```
+
+4. **Run the Script**: Execute the script to merge JSON metadata to the files.
+
+    ```bash
+    ./exif_merge_json_to_file.sh
+    ```
+
+## This project is licensed under the MIT License.
 
